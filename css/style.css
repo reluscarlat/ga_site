@@ -32,8 +32,30 @@
   background-color: red;
   text-align: center;
   padding-top: 10px;
+  color: white;
 }
 
+.button_container:hover {
+  background-color: blue;
+}
+
+input[name] {        /* level 3  css  selector */
+  background-color: yellow;
+}
+
+input[name="foo"] {     /* level 3  css  selector */
+  background-color: black;
+  color: white;
+}
+
+a[href^="mailto"] { /*Applied to all <a> tags who have href attribute who starts with "mailto" prefix*/
+  font-size:2em;
+}
+
+input[name$="DD"] { /*Applied to all <input> tags who have name attribute who ends with "DD" prefix*/
+  background-color: purple;
+  color: white;
+}
 #left_block {
   float: left;
   width: 80%;
@@ -47,3 +69,15 @@
   height: 100%;
   background-color: #ccccff;
 }
+
+/* p:first-letter {
+  font-size: 1.5em;
+} */
+
+/* .button_container:visited {
+  background-color: green;
+} */
+
+/* .button_container:link {
+  background-color: black;
+} */
