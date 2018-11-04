@@ -1,0 +1,49 @@
+.body_container {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.header_container {
+  height: 50px;
+  background-color: #b8b894;
+}
+
+.footer_container {
+  height: 50px;
+  background-color: #b8b894;
+}
+
+.main_container {
+  height: 750px;
+  width: 100%;
+}
+
+.button_container {
+  float: left;
+  height: 30px;
+  width:80px;
+  margin: 2.5px;
+  margin-right: 0px;
+  border-style: solid;
+  border-color: blue;
+  background-color: red;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#left_block {
+  float: left;
+  width: 80%;
+  height: 100%;
+  background-color: #e6e6ff;
+}
+
+#right_block {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #ccccff;
+}
