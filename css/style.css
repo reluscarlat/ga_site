@@ -1,4 +1,4 @@
-.body_container {
+body{
   height: 100%;
   width: 100%;
   padding: 0px;
@@ -6,37 +6,32 @@
   border: 0px;
 }
 
-.header_container {
-  height: 50px;
-  background-color: #b8b894;
-}
-
-.footer_container {
-  height: 50px;
-  background-color: #b8b894;
-}
-
-.main_container {
-  height: 750px;
+main{
+  padding-top: 50px;
+  overflow: hidden; /* attribute used for stopping the overflow of children divs */
+  height: 100%;
   width: 100%;
 }
 
-.button_container {
-  float: left;
-  height: 30px;
-  width:80px;
-  margin: 2.5px;
-  margin-right: 0px;
-  border-style: solid;
-  border-color: blue;
-  background-color: red;
-  text-align: center;
-  padding-top: 10px;
-  color: white;
+header{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(68, 68, 68);
 }
 
-.button_container:hover {
-  background-color: blue;
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(68, 68, 68);;
+}
+
+nav {
+  height: 80%
+}
+section {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 input[name] {        /* level 3  css  selector */
@@ -56,6 +51,21 @@ input[name$="DD"] { /*Applied to all <input> tags who have name attribute who en
   background-color: purple;
   color: white;
 }
+
+.button_container {
+  float:left;
+  height: 100%;
+  width:80px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.button_container:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 #left_block {
   float: left;
   width: 80%;

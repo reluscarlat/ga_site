@@ -8,26 +8,40 @@
     <link rel="stylesheet" href="./css/style.css" media="all">
     <title>Relu's website</title>
   </head>
-  <body class="body_container">
-    <header class="header_container">
+  <body>
+    <header>
       <nav>
         <a class="button_container" href="https://www.google.com">Home</a>
         <a class="button_container" href="https://www.youtube.com">Youtube</a>
         <a class="button_container" href="https://www.google.com">Home</a>
         <a class="button_container" href="https://www.youtube.com">Youtube</a>
         <form style="float:right;" action="index.html" method="post">
-          <label for="user">username</label>
-          <input type="text" type="email" name="user" value="username@email.com" required>
-          <label for="pass">password</label>
-          <input type="password" name="pass" value="" required>
-          <input type="submit" name="" value="sign in">
+          <div>
+            <input type="text" type="email" name="user" placeholder="username@email.com" required>
+            <input type="submit" name="" value="sign in">
+          </div>
+          <div>
+            <input type="password" name="pass" value="" placeholder="password" required>
+          </div>
         </form>
       </nav>
     </header>
-    <main class="main_container">
+    <main>
       <article id="left_block">
         <center><h2>First article</h2></center>
         <hr>
+        <section>
+          <h3>First section</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed volutpat lorem. Nam pellentesque tempor massa. Nulla mollis tellus nunc, mattis gravida tortor laoreet scelerisque. Proin rutrum ex arcu, id mattis dui sagittis ut. Cras nec quam at tellus hendrerit sollicitudin. Maecenas augue odio, venenatis ut risus vitae, rhoncus tincidunt tortor. Mauris id viverra turpis, sit amet gravida massa.</p>
+          <br>
+          <p>Etiam sagittis sem id ultricies eleifend. Fusce vitae metus a risus venenatis aliquet vel ut ligula. Aliquam fringilla vehicula risus id pellentesque. Sed pellentesque scelerisque tellus, quis tristique mauris sagittis vel. Sed sem lacus, suscipit quis egestas vitae, fermentum sit amet elit. Nullam orci mi, posuere aliquet luctus sollicitudin, tempus eget velit. In eu enim a libero porttitor consequat quis vel velit. Pellentesque congue porta ex vitae tincidunt. Aenean sodales ut magna sed euismod. Integer vestibulum ligula nec euismod malesuada.</p>
+        </section>
+        <section>
+          <h3>Second section</h3>
+          <p>Integer sed tincidunt velit, ac congue nisi. Suspendisse dapibus metus blandit lorem sollicitudin, vel tempor nibh faucibus. Pellentesque vulputate iaculis orci sit amet blandit. Pellentesque vitae tortor aliquet, ornare urna nec, suscipit dolor. Aliquam erat volutpat. Phasellus feugiat nisi ut sapien tempor, ac viverra augue bibendum. Nunc non vehicula nunc, et egestas ante. Sed ac enim et quam pretium ultricies sit amet tempor orci. Praesent ultrices neque ac leo blandit, in varius nunc placerat. Aenean quis augue egestas nibh sodales pellentesque lacinia at felis. Donec ac scelerisque turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis eget varius libero, a tristique mi. Vestibulum lobortis dapibus dignissim.</p>
+          <br>
+          <p>Nam luctus metus ut mattis dictum. Nam elementum mauris non velit posuere vulputate. In molestie lobortis lorem, eu egestas arcu scelerisque vitae. Nam tempus orci eget magna faucibus lobortis. Donec condimentum mauris sit amet sapien malesuada ornare. Vivamus vitae ipsum et metus vehicula lacinia. Mauris felis purus, euismod interdum purus in, gravida lobortis libero. Fusce ac est a lacus luctus ornare. Donec sed egestas lacus, id vulputate turpis. Praesent nec auctor velit. Aenean vel est nec libero dignissim sodales id id est. Donec ultricies ante eu felis vulputate, a ullamcorper dolor tempor. Donec nec varius est. Proin tellus est, blandit sed nisl vitae, luctus molestie mi.</p>
+        </section>
         <section>
           <h3>First section</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed volutpat lorem. Nam pellentesque tempor massa. Nulla mollis tellus nunc, mattis gravida tortor laoreet scelerisque. Proin rutrum ex arcu, id mattis dui sagittis ut. Cras nec quam at tellus hendrerit sollicitudin. Maecenas augue odio, venenatis ut risus vitae, rhoncus tincidunt tortor. Mauris id viverra turpis, sit amet gravida massa.</p>
@@ -48,38 +62,38 @@
         </figure>
       </article>
       <aside id="right_block">
-        <p>Text/Advertise that is not related with the content of my website</p>
-        <div>
-          <label for="progresBar">Progres bar</label>
-          <input type="range" name="progresBar" value="33">
-        </div>
-        <div class="">
-          <label for="">Data list: </label>
-          <input type="text" list="myList" value="">
-          <datalist id="myList">
-            <option label="First" value=First>
-            <option label="Second" value=Second>
-            <option label="Third" value=Third>
-          </datalist>
-          <div class=""><label for="">Autofocus: </label> <input type="text" name="ABCDD" value=""  autofocus></div>
-          <div class=""><label for="">Placeholder: </label> <input type="text" name="foo" value="" Placeholder="Hello World!"></div>
-          <form class="" action="index.html" method="post">
-            <div class=""><label for="">Pattern: </label> <input type="text" name="foo" value=""  Pattern="[A-Za-z]{3}" title="Three letter country code"></div>
-            <div class=""><label for="">Must be divisible by 5: </label> <input type="number"  step=5 title="Must be divisible by 5"></div>
-            <input type="submit" name="" value="submit btn">
-          </form>
-          <div class=""><label for="">Email to : </label> <a href="mailto:google@gmail.com">Google</a> </div>
+        <div style="padding-left:10px;">
+          <p>Text/Advertise that is not related with the content of my website</p>
+          <div>
+            <label for="progresBar">Progres bar</label>
+            <input type="range" name="progresBar" value="33">
           </div>
+          <div>
+            <label>Data list: </label>
+            <input type="text" list="myList" value="">
+            <datalist id="myList">
+              <option label="First" value=First>
+              <option label="Second" value=Second>
+              <option label="Third" value=Third>
+            </datalist>
+          </div>
+          <div><label>Autofocus: </label> <input type="text" name="ABCDD" value=""  autofocus></div>
+            <div><label>Placeholder: </label> <input type="text" name="foo" value="" Placeholder="Hello World!"></div>
+            <form action="index.html" method="post">
+              <div><label>Pattern: </label> <input type="text" name="foo" value=""  Pattern="[A-Za-z]{3}" title="Three letter country code"></div>
+              <div><label>Must be divisible by 5: </label> <input type="number"  step=5 title="Must be divisible by 5"></div>
+              <input type="submit" value="submit btn">
+            </form>
+          <div><label>Email to : </label> <a href="mailto:google@gmail.com">Google</a> </div>
         </div>
-
       </aside>
     </main>
-    <footer class="footer_container">
-      <nav>
-        <a class="button_container" href="https://www.facebook.com">Facebook</a>
-        <a class="button_container" href="https://www.instagram.com">Instagram</a>
-        <a class="button_container" href="https://www.twitter.com">Twitter</a>
-      </nav>
+    <footer>
+        <nav>
+          <a class="button_container" href="https://www.facebook.com">Facebook</a>
+          <a class="button_container" href="https://www.instagram.com">Instagram</a>
+          <a class="button_container" href="https://www.twitter.com">Twitter</a>
+        </nav>
     </footer>
   </body>
 </html>
