@@ -5,7 +5,7 @@
     <meta name="description" content="This is an awesome website.">
     <meta name="keywords" content="Website, Test">
     <meta name="viewport" content="width=device-width, initital-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" media="all">
+    <link rel="stylesheet" href="./css/index_style.css" media="all">
     <title>Relu's website</title>
   </head>
   <body>
@@ -18,10 +18,10 @@
         <form style="float:right;" action="index.html" method="post">
           <div>
             <input type="text" type="email" name="user" placeholder="username@email.com" required>
-            <input type="submit" name="" value="sign in">
+            <input type="submit" value="sign in">
           </div>
           <div>
-            <input type="password" name="pass" value="" placeholder="password" required>
+            <input type="password" name="pass" placeholder="password" required>
           </div>
         </form>
       </nav>
@@ -70,17 +70,17 @@
           </div>
           <div>
             <label>Data list: </label>
-            <input type="text" list="myList" value="">
+            <input type="text" list="myList">
             <datalist id="myList">
               <option label="First" value=First>
               <option label="Second" value=Second>
               <option label="Third" value=Third>
             </datalist>
           </div>
-          <div><label>Autofocus: </label> <input type="text" name="ABCDD" value=""  autofocus></div>
-            <div><label>Placeholder: </label> <input type="text" name="foo" value="" Placeholder="Hello World!"></div>
+          <div><label>Autofocus: </label> <input type="text" name="ABCDD"  autofocus></div>
+            <div><label>Placeholder: </label> <input type="text" name="foo" Placeholder="Hello World!"></div>
             <form action="index.html" method="post">
-              <div><label>Pattern: </label> <input type="text" name="foo" value=""  Pattern="[A-Za-z]{3}" title="Three letter country code"></div>
+              <div><label>Pattern: </label> <input type="text" name="foo"  Pattern="[A-Za-z]{3}" title="Three letter country code"></div>
               <div><label>Must be divisible by 5: </label> <input type="number"  step=5 title="Must be divisible by 5"></div>
               <input type="submit" value="submit btn">
             </form>
